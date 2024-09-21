@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(36, 33, 33);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  font-family: "Protest Guerrilla", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  color: #fff;
+}
+
+.title img {
+  width: 6rem;
+  height: 6rem;
+  margin-right: 1.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #585353;
+  border-radius: 0.5rem;
+  box-shadow: rgba(8, 121, 4, 0.452) 0px 5px 15px;
+}
+
+.content input {
+  border-radius: 0.5rem;
+}
+
+.content table {
+  border-radius: 0.5rem;
+  color: #fff;
+}
