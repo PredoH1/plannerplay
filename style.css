@@ -35,9 +35,9 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #585353;
+  background-color: #333333;
   border-radius: 0.5rem;
-  box-shadow: rgba(8, 121, 4, 0.452) 0px 5px 15px;
+  box-shadow: rgba(169, 182, 169, 0.226) 0px 5px 15px;
 }
 
 .content input {
@@ -47,4 +47,41 @@ body {
 .content table {
   border-radius: 0.5rem;
   color: #fff;
+  width: 60rem;
+}
+
+.content tbody {
+  color: yellow;
+}
+
+.result {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30rem;
+  height: 100%;
+  background-color: #333333;
+  border-radius: 0.5rem;
+  box-shadow: rgba(169, 182, 169, 0.226) 0px 5px 15px;
+}
+
+.result h2 {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+#employeePerformance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.3rem;
+  color: yellow;
+}
+
+#employeePerformance p {
+  font-size: 1.2rem;
 }
