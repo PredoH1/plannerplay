@@ -9,18 +9,61 @@
       href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>PlanerPlay</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <div class="title">
+          <img src="./img/iconmain.png" alt="iconmain" />
+          <h1>PlannerPlay</h1>
+        </div>
+
+        <div class="link">
+          <a href="index.html">Home</a>
+          <a href="moreservices.html">More Services</a>
+          <a href="about.html">About</a>
+        </div>
+      </nav>
+    </header>
+
     <main class="container">
-      <div class="title">
-        <img src="./img/iconmain.png" alt="iconmain" />
-        <h1>PlannerPlay</h1>
+      <div class="infoHome">
+        <img src="img/info.png" alt="info home" />
+      </div>
+
+      <div class="downloadPlanilha">
+        <h2>Como otimizar seu trabalho?</h2>
+
+        <p>1 - faça o donwload da planilha</p>
+
+        <p>2 - preencha os dados necessários</p>
+
+        <p>3 - Agora é simples, apenas coloque a sua planilha logo abaixo</p>
+
+        <div class="botaoDownload">
+          <h3>você tera todo o calculo pronto</h3>
+          <button class="buttonRendimento" role="button">
+            <a
+              id="downloadButton"
+              href="Rendimento.xlsx"
+              download="Rendimento.xlsx"
+              >Baixar Planilha de Rendimento</a
+            >
+          </button>
+        </div>
       </div>
 
       <div class="content">
         <input type="file" id="inputExcel" accept=".xlsx, .xls" />
+
         <table id="excelDataTable" border="1">
           <thead id="tableHeader"></thead>
           <tbody id="tableBody"></tbody>
@@ -28,10 +71,15 @@
       </div>
       <div class="result">
         <h2>Rendimento de Cada Funcionário</h2>
+
         <div id="employeePerformance"></div>
         <!-- Seção para exibir os rendimentos -->
       </div>
     </main>
+
+    <footer>
+      <p>oi</p>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
     <script src="app.js"></script>

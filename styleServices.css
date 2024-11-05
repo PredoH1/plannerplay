@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(36, 33, 33);
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #181818;
+  box-shadow: rgba(169, 182, 169, 0.226) 0px 5px 15px;
+  border-radius: 0rem 0rem 0.9rem 0.9em;
+  margin-bottom: 5rem;
+}
+
+.title {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-family: "Protest Guerrilla", sans-serif;
+  letter-spacing: 0.2rem;
+  color: #fff;
+}
+
+.title img {
+  width: 6rem;
+  height: 6rem;
+  margin-right: 1.5rem;
+}
+
+.link {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link a {
+  text-decoration: none;
+  font-family: "Protest Guerrilla", sans-serif;
+  color: #fff;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  height: 80%;
+  border-radius: 10px;
+  background-color: #181818;
+}
+
+.header {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto 12px;
+}
+
+.header h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  word-break: break-all;
+  color: #ffde59;
+}
+
+#new {
+  background-color: #174902;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#new:hover,
+#new:focus {
+  background-color: #298901;
+}
+
+.divTable {
+  padding: 10px;
+  width: auto;
+  height: inherit;
+  overflow: auto;
+}
+
+.divTable::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgb(36, 33, 33);
+}
+
+.divTable::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: darkgray;
+}
+
+table {
+  width: 100%;
+  border-spacing: 10px;
+  word-break: break-all;
+  border-collapse: collapse;
+  color: #ffde59;
+}
+
+thead {
+  background-color: rgb(36, 33, 33);
+  color: #fff;
+}
+
+tr {
+  border-bottom: 1px solid rgb(238, 235, 235) !important;
+}
+
+tbody tr td {
+  vertical-align: text-top;
+  padding: 6px;
+  max-width: 50px;
+}
+
+thead tr th {
+  padding: 5px;
+  text-align: start;
+  margin-bottom: 50px;
+}
+
+tbody tr {
+  margin-bottom: 50px;
+}
+
+thead tr th.acao {
+  width: 100px !important;
+  text-align: center;
+}
+
+tbody tr td.acao {
+  text-align: center;
+}
+
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.377);
+  display: none;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #181818;
+  color: #fff;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.modal label {
+  font-size: 14px;
+  width: 100%;
+}
+
+.modal input {
+  background-color: rgb(36, 33, 33);
+  color: #ffde59;
+  width: 100%;
+  outline: none;
+  padding: 5px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.modal button {
+  width: 100%;
+  background-color: #174902;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.modal button:hover,
+.modal button:focus {
+  background-color: #298901;
+}
+
+.active {
+  display: flex;
+}
+
+.active .modal {
+  animation: modal 0.4s;
+}

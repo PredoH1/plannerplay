@@ -8,12 +8,23 @@ body {
   background-color: rgb(36, 33, 33);
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #181818;
+  box-shadow: rgba(169, 182, 169, 0.226) 0px 5px 15px;
+  border-radius: 0rem 0rem 0.9rem 0.9em;
+  margin-bottom: 5rem;
+}
+
 .title {
+  width: 50%;
   display: flex;
   align-items: center;
   padding: 1.5rem;
   font-family: "Protest Guerrilla", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.2rem;
   color: #fff;
 }
@@ -24,14 +35,121 @@ body {
   margin-right: 1.5rem;
 }
 
+.link {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link a {
+  text-decoration: none;
+  font-family: "Protest Guerrilla", sans-serif;
+  color: #fff;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+.infoHome {
+  width: 70%;
+  border-radius: 1.5rem;
+}
+
+.infoHome img {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.downloadPlanilha {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background-color: #181818;
+}
+
+.downloadPlanilha h2 {
+  font-family: "Protest Guerrilla", sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.downloadPlanilha p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0.2rem;
+  color: #ffde59;
+}
+
+.botaoDownload {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.botaoDownload h3 {
+  margin: 1rem 0rem 1rem 0rem;
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.botaoDownload a {
+  text-decoration: none;
+}
+
+.buttonRendimento {
+  background-color: #174902;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttonRendimento:hover,
+.buttonRendimento:focus {
+  background-color: #298901;
+}
+
+.buttonRendimento a {
+  color: #fff;
+}
 
 .content {
+  margin: 3rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -84,4 +202,14 @@ body {
 
 #employeePerformance p {
   font-size: 1.2rem;
+}
+
+footer {
+  margin-top: 4rem;
+  background-image: url(img/imgFooter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.9rem 0.9rem 0rem 0rem;
+  width: 100%;
+  height: 10rem;
 }
