@@ -15,66 +15,100 @@
     <link rel="stylesheet" href="styleServices.css" />
     <title>More Services</title>
   </head>
-
   <body>
-    <header>
-      <nav>
-        <div class="title">
-          <img src="./img/iconmain.png" alt="iconmain" />
-          <h1>PlannerPlay</h1>
-        </div>
+      <header>
+        <nav>
+          <div class="title">
+            <img src="./img/iconmain.png" alt="iconmain" />
+            <h1>PlannerPlay</h1>
+          </div>
 
-        <div class="link">
-          <a href="index.html">Home</a>
+          <div class="link">
+            <a href="index.html">Home</a>
+            <a href="moreservices.html">More Services</a>
+            <a href="about.html">About</a>
+          </div>
+        </nav>
+      </header>
+
+      <div class="infoCad">
+        <img src="img/CadInfo.png" alt="cadastro de funcionarios">
+      </div>
+
+      <main>
+        <div>
+          <div class="header">
+            <div class="title">
+              <h1>Cadastro de Funcionários</h1>
+            </div>
+
+            <button onclick="openModal()" id="new">Incluir</i></button>
+          </div>
+
+          <div class="divTable">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Função</th>
+                  <th>Salário</th>
+                  <th class="acao">Editar</th>
+                  <th class="acao">Excluir</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="modal-container">
+            <div class="modal">
+              <form>
+                <label for="m-nome">Nome</label>
+                <input id="m-nome" type="text" required />
+        
+                <label for="m-funcao">Função</label>
+                <input id="m-funcao" type="text" required />
+        
+                <label for="m-salario">Salário</label>
+                <input id="m-salario" type="number" required />
+                <button id="btnSalvar">Salvar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="creators">
+          <h2>Criado por:</h2>
+          <div class="names">
+            <img src="img/iconPeople.svg" alt="" />
+            <p>Pedro Henrique Souza Candido</p>
+          </div>
+
+          <div class="names">
+            <img src="img/iconPeople.svg" alt="" />
+            <p>Miguel de M Costa</p>
+          </div>
+
+          <div class="names">
+            <img src="img/iconPeople.svg" alt="" />
+            <p>Cesar Augusto da Silva Carvalho</p>
+          </div>
+
+          <div class="names">
+            <img src="img/iconPeople.svg" alt="" />
+            <p>Mateus de Freitas Silva</p>
+          </div>
+        </div>
+        <div class="linksFooter">
+          <h3>Links:</h3>
+          <a href="https://github.com/PredoH1/plannerplay" target="_blank">Repositorio</a>
           <a href="moreservices.html">More Services</a>
           <a href="about.html">About</a>
         </div>
-      </nav>
-    </header>
-
-    <main class="container">
-      <div>
-        <div class="header">
-          <div class="title">
-            <h1>Cadastro de Funcionários</h1>
-          </div>
-
-          <button onclick="openModal()" id="new">Incluir</i></button>
-        </div>
-
-        <div class="divTable">
-          <table>
-            <thead>
-              <tr>
-                <th>Nome</th>
-                <th>Função</th>
-                <th>Salário</th>
-                <th class="acao">Editar</th>
-                <th class="acao">Excluir</th>
-              </tr>
-            </thead>
-            <tbody>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="modal-container">
-          <div class="modal">
-            <form>
-              <label for="m-nome">Nome</label>
-              <input id="m-nome" type="text" required />
-      
-              <label for="m-funcao">Função</label>
-              <input id="m-funcao" type="text" required />
-      
-              <label for="m-salario">Salário</label>
-              <input id="m-salario" type="number" required />
-              <button id="btnSalvar">Salvar</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </main>
+      </footer> 
     <script src="app2.js"></script>
   </body>
 </html>

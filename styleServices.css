@@ -8,7 +8,6 @@ body {
   background-color: rgb(36, 33, 33);
   font-family: "Ubuntu", sans-serif;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -17,6 +16,19 @@ nav {
   box-shadow: rgba(169, 182, 169, 0.226) 0px 5px 15px;
   border-radius: 0rem 0rem 0.9rem 0.9em;
   margin-bottom: 5rem;
+}
+
+.infoCad {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+  border-radius: 1.5rem;
+}
+
+.infoCad img {
+  width: 50%;
+  border-radius: 1.5rem;
 }
 
 .title {
@@ -55,8 +67,8 @@ button {
   cursor: pointer;
 }
 
-.container {
-  height: 80%;
+main {
+  height: 100%;
   border-radius: 10px;
   background-color: #181818;
 }
@@ -248,4 +260,62 @@ tbody tr td.acao {
 
 .active .modal {
   animation: modal 0.4s;
+}
+
+footer {
+  display: flex;
+  margin-top: 4rem;
+  background-image: url(img/imgFooter.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.9rem 0.9rem 0rem 0rem;
+  width: 100%;
+  height: 100%;
+}
+
+.creators {
+  width: 50%;
+  margin: 1rem;
+  padding: 1rem;
+  border-right: #ffde5975 0.3px solid;
+}
+
+.creators h2 {
+  color: #ffde59;
+}
+
+.names {
+  width: 100%;
+  display: flex;
+  margin: 0.7rem 0rem 0.7rem 0rem;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+}
+
+.names img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0rem 0.6rem 0rem 0rem;
+}
+
+.linksFooter {
+  width: 50%;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linksFooter h3 {
+  color: #ffde59;
+}
+
+.linksFooter a {
+  margin: 0.7rem 0rem 0.7rem 0rem;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
 }
