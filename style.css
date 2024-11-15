@@ -9,6 +9,11 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+header {
+  width: 100%;
+  border: 1px solid red;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
