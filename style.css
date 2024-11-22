@@ -4,25 +4,23 @@
   margin: 0;
 }
 
+html,
 body {
   background-color: rgb(36, 33, 33);
   font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 header {
-  width: 100%;
-  border: 1px solid red;
-}
-
-nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 4rem;
-  background-color: #181818a6;
+  background-color: #181818;
   border-bottom: #070707ef 0.2rem solid;
   box-shadow: rgba(169, 182, 169, 0.226) 0px 5px 15px;
-  border-radius: 0rem 0rem 0.9rem 0.9em;
   margin-bottom: 5rem;
 }
 
@@ -47,6 +45,31 @@ nav {
   font-size: 1.5rem;
 }
 
+/* NavBar*/
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
 .link {
   width: 50%;
   display: flex;
@@ -66,6 +89,8 @@ nav {
   border-bottom: #ffde59 0.1rem solid;
 }
 
+/* Fim do NavBar*/
+
 .container {
   display: flex;
   justify-content: center;
@@ -80,7 +105,7 @@ nav {
 
 .infoHome img {
   width: 100%;
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
 }
 
 .downloadPlanilha {
@@ -90,7 +115,7 @@ nav {
   flex-direction: column;
   margin: 2rem;
   padding: 2rem;
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
   background-color: #181818;
 }
 
@@ -146,7 +171,6 @@ nav {
   margin: 0;
   outline: none;
   padding: 10px 16px;
-  position: relative;
   text-align: center;
   text-decoration: none;
   transition: color 100ms;
@@ -229,7 +253,6 @@ footer {
   background-image: url(img/imgFooter.png);
   background-size: cover;
   background-position: center;
-  border-radius: 0.9rem 0.9rem 0rem 0rem;
   width: 100%;
   height: 100%;
 }
@@ -282,3 +305,58 @@ footer {
 }
 
 /* Fim da Footer*/
+
+/* Responsive area*/
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #181818;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
