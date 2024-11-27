@@ -167,16 +167,12 @@ header {
   font-weight: 500;
   height: 40px;
   line-height: 20px;
-  list-style: none;
-  margin: 0;
   outline: none;
   padding: 10px 16px;
   text-align: center;
   text-decoration: none;
   transition: color 100ms;
   vertical-align: baseline;
-  user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
 }
 
@@ -308,10 +304,86 @@ footer {
 
 /* Responsive area*/
 
+@media (max-width: 450px) {
+  .title {
+    width: 50%;
+  }
+
+  .title h1 {
+    font-size: 1rem;
+  }
+
+  .title img {
+    margin-right: 0.5rem;
+  }
+
+  .infoHome {
+    width: 95%;
+    border-radius: 1.5rem;
+  }
+
+  .infoHome img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+  }
+
+  .downloadPlanilha p {
+    font-size: 1rem;
+  }
+
+  .downloadPlanilha h2 {
+    font-size: 1rem;
+  }
+
+  .botaoDownload h3 {
+    font-size: 1rem;
+  }
+
+  .buttonRendimento {
+    height: 100%;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .content table {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .result {
+    width: 90%;
+    font-size: 0.8rem;
+  }
+
+  #employeePerformance p {
+    font-size: 0.9rem;
+  }
+
+  .creators h2 {
+    font-size: 1rem;
+  }
+
+  .creators p {
+    font-size: 0.8rem;
+  }
+
+  .linksFooter h3 {
+    font-size: 1rem;
+  }
+
+  .linksFooter a {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 999px) {
   body {
     overflow-x: hidden;
   }
+
   .nav-list {
     position: absolute;
     top: 8vh;
